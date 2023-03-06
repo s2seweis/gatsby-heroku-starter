@@ -17,7 +17,7 @@
       resolve: `gatsby-source-strapi`,
       options: {
         // apiURL: `http://localhost:1337`,
-        apiURL: `http://127.0.0.1:1337`,
+        apiURL: `https://gatsby-portfolio-backend.herokuapp.com/`,
         queryLimit: 1000, // Default to 100
         
         // Older Plugin Version 0.0.12 (used in the starter)

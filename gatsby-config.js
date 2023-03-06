@@ -23,7 +23,11 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://127.0.0.1:1337`,
+        // apiURL: `http://127.0.0.1:1337`,
+
+        apiURL: `https://gatsby-portfolio-backend.herokuapp.com`,
+
+        
         queryLimit: 1000, // Default to 100
         collectionTypes: [`jobs`],
       },
