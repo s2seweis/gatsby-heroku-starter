@@ -4494,13 +4494,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constants_links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../constants/links */ "./src/constants/links.js");
 /* harmony import */ var _constants_social_links__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants/social_links */ "./src/constants/social_links.js");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
 
 
 
 
 
-const Sidebar = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "sidebar component");
+const Sidebar = ({
+  isOpen,
+  toggleSidebar
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("aside", {
+    className: isOpen ? "sidebar show-sidebar" : "sidebar"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: "close-btn",
+    type: "button",
+    onClick: toggleSidebar
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__.FaTimes, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "side-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: isOpen ? "sidebar-links" : null
+  }, _constants_links__WEBPACK_IMPORTED_MODULE_1__["default"].map(link => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      key: link.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
+      to: link.url,
+      onClick: toggleSidebar
+    }, link.text));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: isOpen ? "social-links sidebar-icons" : null
+  }, _constants_social_links__WEBPACK_IMPORTED_MODULE_2__["default"].map(link => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      key: link.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+      href: link.url,
+      className: "social-link"
+    }, link.icon));
+  }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sidebar);
 
