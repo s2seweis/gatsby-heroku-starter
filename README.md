@@ -36,3 +36,5 @@ npm run build
 
 Run the Project:
 npm start
+
+127.0.0.1:1337
