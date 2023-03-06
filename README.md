@@ -30,3 +30,9 @@
       },
     },
 ```
+
+Building the Project:
+npm run build
+
+Run the Project:
+npm start

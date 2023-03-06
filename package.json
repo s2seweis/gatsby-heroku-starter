@@ -19,7 +19,7 @@
     "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-sharp": "^3.2.1",
     "gatsby-source-filesystem": "^3.2.0",
-    "gatsby-source-strapi": "^0.0.12",
+    "gatsby-source-strapi": "^1.0.0",
     "gatsby-transformer-sharp": "^3.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -36,7 +36,6 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
