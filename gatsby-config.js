@@ -7,6 +7,15 @@
 module.exports = {
   /* Your site config here */
 
+  siteMetadata: {
+    title: `WebDev Portfolio`,
+    description: `Portfolio build with Gatsby and Strapi`,
+    titleTemplate: `%s | WebDev Portfolio `,
+    url: `https://gatsby-strapi-portfolio-project.netlify.app`,
+    githubUsername:"s2seweis",
+    image: `/scrrenshot.png`,
+  },
+
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -27,7 +36,7 @@ module.exports = {
 
         apiURL: `https://gatsby-portfolio-backend.herokuapp.com`,
 
-        
+
         queryLimit: 1000, // Default to 100
         collectionTypes: [`jobs`, `projects`],
         singleTypes: [`about`]
