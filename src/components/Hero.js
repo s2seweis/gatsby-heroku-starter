@@ -11,13 +11,13 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h2>i'm Sebastian </h2>
+            <h1>i'm john</h1>
             <h4>freelance web and mobile UI/UX Designer</h4>
             <Link to="/contact" className="btn">
               contact me
             </Link>
             <div className="social-links">
-              {socialLinks.map(link => {g
+              {socialLinks.map(link => {
                 return (
                   <a href={link.url} key={link.id} className="social-link">
                     {link.icon}
