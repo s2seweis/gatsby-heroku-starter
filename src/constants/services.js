@@ -6,23 +6,23 @@ const services = [
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text1: `Programming Languages: HTML, CSS, JavaScript and Typescript`,
-    text: `Frameworks/ Libraries: React, Gatsby, Node, Angular, jQuery,  `,
-    text: `Database: Firebase and PostgreSQL  `,
-    text: `Other Keywords: Redux, GraphQL, Serverles Functions, Stripe, Webhooks,  Websockets  `,
-
+    text1: `I build modern websites in HTML, CSS, JAVASCRIPT and TYPESCRIPT `,
+    text2: ` read more`,
+    
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
     title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text1: `Every project has its own target group.  I am able to create attractive web designs with CSS/SCSS and Adobe Dreamweaver`,
+    text2: `read more`,
   },
   {
     id: 3,
     icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    title: "graphic design",
+    text1: `Other services: image editing , design of flyers, design of logos, optimization of instergram and facebook websites`,
+    text2: `read more`,
   },
 ]
 
