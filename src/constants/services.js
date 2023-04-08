@@ -1,11 +1,12 @@
 import React from "react"
 import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+
 const services = [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: `Programming Languages: HTML, CSS, and JavaScript`,
+    text1: `Programming Languages: HTML, CSS, JavaScript and Typescript`,
     text: `Frameworks/ Libraries: React, Gatsby, Node, Angular, jQuery,  `,
     text: `Database: Firebase and PostgreSQL  `,
     text: `Other Keywords: Redux, GraphQL, Serverles Functions, Stripe, Webhooks,  Websockets  `,
