@@ -17992,24 +17992,24 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "react-dom/server":
-/*!********************************************************************************************************!*\
-  !*** external "/Users/SWT/Desktop/testbackend/gatsby-heroku-starter/node_modules/react-dom/server.js" ***!
-  \********************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** external "/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/node_modules/react-dom/server.js" ***!
+  \**************************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/SWT/Desktop/testbackend/gatsby-heroku-starter/node_modules/react-dom/server.js");
+module.exports = require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!***************************************************************************************************!*\
-  !*** external "/Users/SWT/Desktop/testbackend/gatsby-heroku-starter/node_modules/react/index.js" ***!
-  \***************************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** external "/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/node_modules/react/index.js" ***!
+  \*********************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/SWT/Desktop/testbackend/gatsby-heroku-starter/node_modules/react/index.js");
+module.exports = require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/node_modules/react/index.js");
 
 /***/ }),
 

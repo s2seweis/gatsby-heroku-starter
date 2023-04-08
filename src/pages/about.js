@@ -4,6 +4,7 @@ import Title from "../components/Title"
 import Seo from "../components/Seo"
 
 const About = ({ data }) => {
+  console.log(data);
   const {
     strapiAbout: { title, image, info, stack },
   } = data

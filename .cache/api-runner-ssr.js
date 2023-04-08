@@ -1,14 +1,14 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/SWT/Desktop/testbackend/gatsby-heroku-starter/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      plugin: require('/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('/Users/SWT/Desktop/testbackend/gatsby-heroku-starter/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'default-site-plugin',
-      plugin: require('/Users/SWT/Desktop/testbackend/gatsby-heroku-starter/gatsby-ssr'),
+      plugin: require('/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 /* global plugins */
