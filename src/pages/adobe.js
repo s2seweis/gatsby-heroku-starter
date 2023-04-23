@@ -65,9 +65,29 @@ export const query = graphql`
           publicURL
         }
       }
+      image3 {
+        localFile {
+          publicURL
+        }
+      }
+      image4 {
+        localFile {
+          publicURL
+        }
+      }
+      image5 {
+        localFile {
+          publicURL
+        }
+      }
+      image6 {
+        localFile {
+          publicURL
+        }
+      }
     }
   }
-`
+`;
 
 const Adobe = ({data}) => {
   const [index, setIndex] = useState (0);
@@ -79,10 +99,14 @@ const Adobe = ({data}) => {
   console.log (data);
   const {
     strapiAdobe: {
-     title1,
-     text1,
-     image1,
-     image2
+      title1,
+      text1,
+      image1,
+      image2,
+      image3,
+      image4,
+      image5,
+      image6,
     },
   } = data;
   return (
@@ -117,45 +141,32 @@ const Adobe = ({data}) => {
 
               <div class="col-3 menu">
 
-             
-
                 <Accordion style={{marginBottom: '20px'}}>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
-                      What is web design everything about?
+                      Is this part of my portfolio ready ?
                     </Accordion.Header>
                     <Accordion.Body>
-                      Web design is the field that involves digital interfaces such as websites,
-
-                      apps, and services.
-                      By using HTML code to program websites and CSS to standardize its visual language,
-
-                      web design professionals are responsible for building digital experiences to be used by the public.
+                      No, I regret that this part and other stuff of my portfolio is not complete, it just give you an first impression of my skills.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
                     <Accordion.Header>
-                      How to be a good web designer?
+                      Why Adobe?
                     </Accordion.Header>
                     <Accordion.Body>
-                      1. Avoid hectic color schemes.
-                      2. Put some thought into the images you include.
-                      3. Learn about SEO.
-                      4. Use responsive design.
-                      5. Keep typography consistent.
-                      6. Keep diversity and inclusion in mind.
-                      7. Define who you are as a designer
+                      Adobe Creative Cloud gives graphic artists and photographers the creation and editing tools they need to realize their visions. 
+                      This includes both the graphic design software to make new work and the editing tools to make content like photos and video footage look their best.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>
-                      What is effective web design?
+                      What I do at the moment with adobe?
                     </Accordion.Header>
                     <Accordion.Body>
-                      Rather than trying to force the viewer's visual flow,
-                      effectively designed websites will work with a reader's natural behaviour
-
-                      and display information in order of importance (left to right, and top to bottom).
+                     Currently I work with adobe for improving the webdesign of my landing pages. 
+                     The goal of a landing page is to convert and build a repository of leads that can be nurtured with more personalized marketing campaigns using email, 
+                     direct mail, paid ads, or other types of targeted marketing before those leads reach your sales team to make a purchase.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
@@ -187,31 +198,67 @@ const Adobe = ({data}) => {
                   >
                     {/* ### */}
 
-
                     <h3> {title1} </h3>
                     <h4> {text1} </h4>
-                    <h4
-                    
-                    style={{marginTop:"20px"}}
 
-                    >Before</h4>
+                    <h4 style={{marginTop: '20px'}}>Before</h4>
 
-                    <img 
-                    
-                    style={{width:"-webkit-fill-available"}}
-                    
-                    src={image1.localFile.publicURL} alt={title1} className="image1" />
-                    
+                    <img
+                      style={{width: '-webkit-fill-available'}}
+                      src={image1.localFile.publicURL}
+                      alt={title1}
+                      className="image1"
+                    />
+
                     <h4>After</h4>
 
-                    <img 
-                    
-                    style={{width:"-webkit-fill-available"}}
-                    
-                    src={image2.localFile.publicURL} alt={title1} className="image1" />
+                    <img
+                      style={{width: '-webkit-fill-available'}}
+                      src={image2.localFile.publicURL}
+                      alt={title1}
+                      className="image1"
+                    />
 
+                    {/* ### */}
 
-                   
+                    <h4 style={{marginTop: '20px'}}>Before</h4>
+
+                    <img
+                      style={{width: '-webkit-fill-available'}}
+                      src={image3.localFile.publicURL}
+                      alt={title1}
+                      className="image1"
+                    />
+
+                    <h4>After</h4>
+
+                    <img
+                      style={{width: '-webkit-fill-available'}}
+                      src={image4.localFile.publicURL}
+                      alt={title1}
+                      className="image1"
+                    />
+
+                    {/* ### */}
+
+                    <h4 style={{marginTop: '20px'}}>Before</h4>
+
+                    <img
+                      style={{width: '-webkit-fill-available'}}
+                      src={image5.localFile.publicURL}
+                      alt={title1}
+                      className="image1"
+                    />
+
+                    <h4>After</h4>
+
+                    <img
+                      style={{width: '-webkit-fill-available'}}
+                      src={image6.localFile.publicURL}
+                      alt={title1}
+                      className="image1"
+                    />
+
                     {/* ### */}
 
                   </section>

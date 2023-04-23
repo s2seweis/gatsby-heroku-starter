@@ -137,22 +137,7 @@ const Webdevelopment = ({data}) => {
             <div class="row" style={{background: 'var(--clr-grey-10)'}}>
               <div class="col-3 menu">
 
-                <Card style={{marginBottom: '20px'}}>
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      Card Subtitle
-                    </Card.Subtitle>
-                    <Card.Text
-                    style={{marginTop:"20px"}}
-                    >
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    {/* <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link> */}
-                  </Card.Body>
-                </Card>
+               
 
                 <Accordion style={{marginBottom: '20px'}}>
                   <Accordion.Item eventKey="0">
