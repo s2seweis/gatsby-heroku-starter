@@ -28,16 +28,21 @@ const Jobs = () => {
   const [value, setValue] = React.useState(0)
   const { company, position, date, desc } = jobs[value]
   return (
-    <section className="section jobs">
+    <section className="section jobs"
+    
+    style={{background: 'lightblue'}}
+    
+    
+    >
       <Title title="experience" />
       <div className="jobs-center">
         {/* btn container */}
-        <div className="btn-container">
+        <div className="btn-container1">
           {jobs.map((item, index) => {
             return (
               <button
                 key={index}
-                className={index === value ? "job-btn active-btn" : "job-btn"}
+                className={index === value ? "job-btn1 active-btn1" : "job-btn1"}
                 onClick={() => setValue(index)}
               >
                 {item.company}
@@ -60,7 +65,11 @@ const Jobs = () => {
           })}
         </article>
       </div>
-      <Link to="/about" className="btn center-btn">
+      <Link 
+      
+      style={{display:"flex", justifyContent:"center", background:"white"}}
+      
+      to="/about" className="btn center-btn">
         more info
       </Link>
     </section>

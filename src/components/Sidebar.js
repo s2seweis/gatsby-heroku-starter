@@ -3,6 +3,11 @@ import links from "../constants/links"
 import socialLinks from "../constants/social_links"
 import { Link } from "gatsby"
 import { FaTimes } from "react-icons/fa"
+
+
+import hero from "../assets/images/hero.svg"
+
+
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <aside className={isOpen ? "sidebar show-sidebar" : "sidebar"}>
@@ -10,6 +15,28 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <FaTimes />
       </button>
       <div className="side-container">
+
+
+      {/* <img src="../assets/images/hero.svg"  className="about-img-svg" /> */}
+
+
+      <div 
+      
+      style={{display:"flex", justifyContent:"center"}}
+      
+      className="sidebar-div">
+
+      <img 
+      
+      style={{width:"50%"}}
+      
+      src={hero} alt="web dev" />
+
+      </div>
+
+
+
+
         <ul className={isOpen ? "sidebar-links" : null}>
           {links.map(link => {
             return (
@@ -21,6 +48,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             )
           })}
         </ul>
+
+
         <ul className={isOpen ? "social-links sidebar-icons" : null}>
           {socialLinks.map(link => {
             return (

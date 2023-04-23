@@ -12,7 +12,12 @@ const Projects = ({ projects, title, showLink }) => {
         })}
       </div>
       {showLink && (
-        <Link to="/projects" className="btn center-btn">
+        
+        
+        <Link 
+        style={{display:"flex", justifyContent:"center", background:"white"}}
+        
+        to="/projects" className="btn center-btn">
           projects
         </Link>
       )}

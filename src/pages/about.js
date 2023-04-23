@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Seo from "../components/Seo"
 
+
+
 const About = ({ data }) => {
   console.log(data);
   const {
@@ -12,16 +14,51 @@ const About = ({ data }) => {
     <>
       <Seo title="About" />
       <section className="about-page">
-        <div className="section-center about-center">
+
+
+        
+
+
+        <div 
+        
+        
+        // style={{display:"flex"}}
+        
+        className="section-center1 about-center">
           <img src={image.localFile.publicURL} alt={title} className="about-img-svg" />
+
+
+
+         
+
+
+
           <article className="about-text">
             <Title title={title} />
             <p>{info}</p>
+
+
+
+
             <div className="about-stack">
+
+            <div className="abou-stack-center"
+
+            style={{display:"table", margin:"auto"}}
+
+            
+            
+            >
+
+
               {stack.map(item => {
                 return <span key={item.id}>{item.title}</span>
               })}
             </div>
+
+              </div>
+
+
           </article>
         </div>
       </section>
