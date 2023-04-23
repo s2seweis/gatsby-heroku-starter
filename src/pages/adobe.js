@@ -52,32 +52,22 @@ import Card from 'react-bootstrap/Card';
 
 export const query = graphql`
   {
-    strapiDevelopment {
-      info
-      title
+    strapiAdobe {
       title1
-      stack {
-        id
-        title
+      text1
+      image1 {
+        localFile {
+          publicURL
+        }
       }
-      title2
-      stack1 {
-        id
-        title
-      }
-      title3
-      stack2 {
-        id
-        title
-      }
-      title4
-      stack3 {
-        id
-        title
+      image2 {
+        localFile {
+          publicURL
+        }
       }
     }
   }
-`;
+`
 
 const Adobe = ({data}) => {
   const [index, setIndex] = useState (0);
@@ -88,18 +78,11 @@ const Adobe = ({data}) => {
 
   console.log (data);
   const {
-    strapiDevelopment: {
-      title,
-      title1,
-      title2,
-      title3,
-      title4,
-      info,
-      stack,
-      stack1,
-      stack2,
-      stack3,
-      image,
+    strapiAdobe: {
+     title1,
+     text1,
+     image1,
+     image2
     },
   } = data;
   return (
@@ -134,20 +117,7 @@ const Adobe = ({data}) => {
 
               <div class="col-3 menu">
 
-                <Card style={{marginBottom: '20px'}}>
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
-                      Card Subtitle
-                    </Card.Subtitle>
-                    <Card.Text style={{marginTop: '20px'}}>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    {/* <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link> */}
-                  </Card.Body>
-                </Card>
+             
 
                 <Accordion style={{marginBottom: '20px'}}>
                   <Accordion.Item eventKey="0">
@@ -216,8 +186,32 @@ const Adobe = ({data}) => {
                     className="about-page"
                   >
                     {/* ### */}
-                   
 
+
+                    <h3> {title1} </h3>
+                    <h4> {text1} </h4>
+                    <h4
+                    
+                    style={{marginTop:"20px"}}
+
+                    >Before</h4>
+
+                    <img 
+                    
+                    style={{width:"-webkit-fill-available"}}
+                    
+                    src={image1.localFile.publicURL} alt={title1} className="image1" />
+                    
+                    <h4>After</h4>
+
+                    <img 
+                    
+                    style={{width:"-webkit-fill-available"}}
+                    
+                    src={image2.localFile.publicURL} alt={title1} className="image1" />
+
+
+                   
                     {/* ### */}
 
                   </section>
