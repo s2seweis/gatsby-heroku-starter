@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-adobe-js",
     "path": "/adobe/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"strapiDevelopment":{"info":"Here a short list of the tools that I use for building and maintaining websites.","title":"My Workbench","title1":"Programming Languages:","stack":[{"id":17,"title":"html"},{"id":18,"title":"css/scss"},{"id":19,"title":"javascript"},{"id":20,"title":"typescript"}],"title2":"Framework and Libraaries:","stack1":[{"id":21,"title":"react"},{"id":22,"title":"gatsby"},{"id":23,"title":"node"},{"id":24,"title":"jquery"},{"id":25,"title":"bootstrap"}],"title3":"Databases:","stack2":[{"id":26,"title":"firebase"},{"id":27,"title":"postgressql"},{"id":28,"title":"mangodb"}],"title4":"Other:","stack3":[{"id":29,"title":"adobe photoshop"},{"id":30,"title":"adobe illustrator"},{"id":31,"title":"adobe indesign"},{"id":32,"title":"adobe xd"},{"id":33,"title":"anima"},{"id":34,"title":"wordpress"},{"id":35,"title":"divi themes"},{"id":36,"title":"woo commerce"}]}},"pageContext":{}},
     "staticQueryHashes": []}

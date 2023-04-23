@@ -39,7 +39,7 @@ module.exports = {
 
         queryLimit: 1000, // Default to 100
         collectionTypes: [`jobs`, `projects`],
-        singleTypes: [`about`, `development`]
+        singleTypes: [`about`, `development`, `adobe`]
       },
     },
 
