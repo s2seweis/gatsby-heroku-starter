@@ -41,9 +41,9 @@ export const Webdesign = () => {
 
       <Seo title="Contact" />
 
-      <div className="top-head" style={{marginTop: '100px'}} />
+      <div className="top-head"  />
 
-      <div style={{margin: 'auto', marginBottom: '50px'}} className="top-web">
+      <div style={{margin: 'auto', marginBottom: '15px'}} className="top-web">
 
         <div className="Test2">
 
@@ -74,6 +74,9 @@ export const Webdesign = () => {
                   <Card.Link href="#">Another Link</Card.Link> */}
                 </Card.Body>
               </Card>
+
+
+              {/* ### */}
 
               <div className="color" style={{textAlign: 'center'}}>
 
@@ -110,6 +113,9 @@ export const Webdesign = () => {
                 </p>
 
               </div>
+
+
+              {/* ### */}
 
               <Accordion style={{marginBottom: '20px'}}>
                 <Accordion.Item eventKey="0">

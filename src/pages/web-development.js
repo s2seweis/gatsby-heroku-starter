@@ -50,6 +50,8 @@ import Card from 'react-bootstrap/Card';
 
 // ###
 
+import {Link} from 'gatsby';
+
 export const query = graphql`
   {
     strapiDevelopment {
@@ -111,22 +113,17 @@ const Webdevelopment = ({data}) => {
 
         <Seo title="Contact" />
 
-        <div className="top-head" style={{marginTop: '100px'}} />
+        <div className="top-head" />
 
-        <div style={{margin: 'auto', marginBottom: '50px'}} className="top-web">
+        <div style={{margin: 'auto', marginBottom: '15px'}} className="top-web">
 
           <div className="Test2">
 
             {/* ### - Header*/}
 
-            <div
-            
-            style={{height:"70px"}}
+            <div style={{height: '70px'}} class="header1">
 
-            class="header1">
-
-              <h2 className="title-web"
-              style={{marginBottom:"0px"}}>
+              <h2 className="title-web" style={{marginBottom: '0px'}}>
                 Webdevelopment
               </h2>
 
@@ -135,13 +132,40 @@ const Webdevelopment = ({data}) => {
             {/* ### */}
 
             <div class="row" style={{background: 'var(--clr-grey-10)'}}>
-              <div class="col-3 menu">
+              <div style={{padding: '15px 15px 0px 15px'}} class="col-3 menu">
 
-               
+                <div
+                  className="menu-sub"
+                  // ### making bootstrap breadcrumb out of it
 
-                <Accordion style={{marginBottom: '20px'}}>
+                  style={{
+                    marginBottom: '15px',
+                    alignItems: 'center',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    gap: '25px',
+                  }}
+                >
+
+                  <div>
+
+                    <Link to="/web-design" className="btn1">
+                      Webdesign
+                    </Link>
+                  </div>
+
+                  <div>
+
+                    <Link to="/adobe" className="btn1">
+                      Adobe
+                    </Link>
+                  </div>
+
+                </div>
+
+                <Accordion style={{}}>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header>
+                    <Accordion.Header style={{marginTop: '0px'}}>
                       What is web design everything about?
                     </Accordion.Header>
                     <Accordion.Body>
@@ -185,7 +209,7 @@ const Webdevelopment = ({data}) => {
               <div
                 style={{
                   padding: '15px',
-                  background: 'white',
+                  // background: 'white',
                   marginTop: '15px',
                 }}
                 class="col-6"
@@ -199,7 +223,7 @@ const Webdevelopment = ({data}) => {
                     style={{
                       marginTop: '0px',
                       padding: '0px',
-                      background: 'white',
+                      // background: 'white',
                     }}
                     className="about-page"
                   >
@@ -210,12 +234,19 @@ const Webdevelopment = ({data}) => {
                         className="about-text"
                         style={{
                           padding: '0px',
-                          background: 'white',
+                          // background: 'white',
                           padding: '10px',
                         }}
                       >
 
-                        <div className="pl" style={{background:"var(--clr-grey-10)", borderRadius:"15px", paddingTop:"10px"}}>
+                        <div
+                          className="pl"
+                          style={{
+                            background: 'var(--clr-grey-10)',
+                            borderRadius: '15px',
+                            paddingTop: '10px',
+                          }}
+                        >
 
                           <h3 style={{textAlign: 'center'}}>{title}</h3>
 

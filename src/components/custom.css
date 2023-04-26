@@ -799,9 +799,9 @@
 
 .accordion-button {
   position: relative;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
   font-size: 1rem;
   color: var(--bs-accordion-btn-color);
@@ -814,6 +814,8 @@
   margin: auto;
   font-size: "14px";
   text-align: center;
+  display: grid;
+  grid-template-columns: auto 50px;
 }
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
@@ -857,6 +859,7 @@
 
 .accordion-header {
   /* margin-bottom: 0; */
+  margin-top: 15px;
 }
 
 .accordion-item {
