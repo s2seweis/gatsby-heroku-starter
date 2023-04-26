@@ -1,56 +1,54 @@
 // import React from 'react';
 import {graphql} from 'gatsby';
-import Title from '../components/Title';
+// import Title from '../components/Title';
 import Seo from '../components/Seo';
 
-import {FaReact, FaNodeJs} from 'react-icons/fa';
-import {BsFiletypeHtml, BsFiletypeCss} from 'react-icons/bs';
+// import {FaReact, FaNodeJs} from 'react-icons/fa';
+// import {BsFiletypeHtml, BsFiletypeCss} from 'react-icons/bs';
 
-import {logo} from '../assets/images/hero.svg';
+// import {logo} from '../assets/images/hero.svg';
 
-import {
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiGatsby,
-  SiNodedotjs,
-  SiAngular,
-  SiJquery,
-} from 'react-icons/si';
+// import {
+//   SiJavascript,
+//   SiTypescript,
+//   SiReact,
+//   SiGatsby,
+//   SiNodedotjs,
+//   SiAngular,
+//   SiJquery,
+// } from 'react-icons/si';
 
 // ###
 
 // import Seo from '../components/Seo';
 
-import Game from '../components-game/Game';
+// import Game from '../components-game/Game';
 
-import hero from '../assets/images/hero.svg';
-import projects from '../assets/images/projects-1.jpg';
+// import hero from '../assets/images/hero.svg';
+// import projects from '../assets/images/projects-1.jpg';
 
-import logo5 from '../assets/images/logo5.svg';
+// import logo5 from '../assets/images/logo5.svg';
 
-import projects1 from '../assets/images/projects-4.jpg';
-import projects2 from '../assets/images/projects-3.jpg';
+// import projects1 from '../assets/images/projects-4.jpg';
+// import projects2 from '../assets/images/projects-3.jpg';
 
 // ###
-import {Button} from 'react-bootstrap';
 // import '../assets/css/main.css';
-
 // import 'bootstrap/dist/css/bootstrap.min.css';
+// import {Button} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
-import ListGroup from 'react-bootstrap/ListGroup';
+// import ListGroup from 'react-bootstrap/ListGroup';
+// import Card from 'react-bootstrap/Card';
+// import Carousel from 'react-bootstrap/Carousel';
+
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+// ###
 
 import '../components/custom.css';
 
-import Carousel from 'react-bootstrap/Carousel';
-
 import React, {useState} from 'react';
 
-import Card from 'react-bootstrap/Card';
-
-// ###
-
-import {Link} from 'gatsby';
+import {StaticImage} from 'gatsby-plugin-image';
 
 export const query = graphql`
   {
@@ -117,11 +115,54 @@ const Webdevelopment = ({data}) => {
 
         <div style={{margin: 'auto', marginBottom: '15px'}} className="top-web">
 
+          <div style={{height: '95vh'}} className="Test1">
+
+            <div style={{height: '70px'}} className="header1">
+
+              <h2 className="title-web" style={{marginBottom: '0px'}}>
+                Webdevelopment
+              </h2>
+
+            </div>
+
+            <div
+              className="img-web-top"
+              style={{display:"flex", alignItems:"center", justifyContent:"center"}}
+            >
+
+              <div
+                className="img-web"
+                style={{marginTop: '50px', width: '30%'}}
+              >
+
+                <StaticImage
+                  src="../assets/images/hero.svg"
+                  alt="portfolio"
+                  className="hero-img"
+                  placeholder="blurred"
+                />
+
+              </div>
+
+              <div className="part2" style={{width: '30%', marginTop: '50px'}}>
+
+                <p>Test1</p>
+                <p>Test2</p>
+                <p>Test3</p>
+
+              </div>
+
+            </div>
+
+            {/* ### */}
+
+          </div>
+
           <div className="Test2">
 
             {/* ### - Header*/}
 
-            <div style={{height: '70px'}} class="header1">
+            <div style={{height: '70px'}} className="header1">
 
               <h2 className="title-web" style={{marginBottom: '0px'}}>
                 Webdevelopment
@@ -131,10 +172,13 @@ const Webdevelopment = ({data}) => {
 
             {/* ### */}
 
-            <div class="row" style={{background: 'var(--clr-grey-10)'}}>
-              <div style={{padding: '15px 15px 0px 15px'}} class="col-3 menu">
+            <div className="row" style={{background: 'var(--clr-grey-10)'}}>
+              <div
+                style={{padding: '15px 15px 0px 15px'}}
+                className="col-3 menu"
+              >
 
-                <div
+                {/* <div
                   className="menu-sub"
                   // ### making bootstrap breadcrumb out of it
 
@@ -161,7 +205,11 @@ const Webdevelopment = ({data}) => {
                     </Link>
                   </div>
 
-                </div>
+                </div> */}
+
+                {/* ### */}
+
+                {/* ### */}
 
                 <Accordion style={{}}>
                   <Accordion.Item eventKey="0">
@@ -181,14 +229,29 @@ const Webdevelopment = ({data}) => {
                     <Accordion.Header>
                       How to be a good web designer?
                     </Accordion.Header>
+
                     <Accordion.Body>
-                      1. Avoid hectic color schemes.
-                      2. Put some thought into the images you include.
-                      3. Learn about SEO.
-                      4. Use responsive design.
-                      5. Keep typography consistent.
-                      6. Keep diversity and inclusion in mind.
-                      7. Define who you are as a designer
+
+                      <p style={{marginBottom: '0px'}}>
+                        {' '}1. Avoid hectic color schemes.
+                      </p>
+                      <p style={{marginBottom: '0px'}}>
+                        {' '}2. Put some thought into the images you include.
+                      </p>
+                      <p style={{marginBottom: '0px'}}> 3. Learn about SEO.</p>
+                      <p style={{marginBottom: '0px'}}>
+                        {' '}4. Use responsive design.
+                      </p>
+                      <p style={{marginBottom: '0px'}}>
+                        {' '}5. Keep typography consistent.
+                      </p>
+                      <p style={{marginBottom: '0px'}}>
+                        {' '}6. Keep diversity and inclusion in mind.
+                      </p>
+                      <p style={{marginBottom: '0px'}}>
+                        {' '}7. Define who you are as a designer
+                      </p>
+
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
@@ -209,11 +272,21 @@ const Webdevelopment = ({data}) => {
               <div
                 style={{
                   padding: '15px',
-                  // background: 'white',
+                  background: 'white',
                   marginTop: '15px',
                 }}
-                class="col-6"
+                className="col-6"
               >
+
+                <Breadcrumb style={{display: 'flex', justifyContent: 'center'}}>
+                  <Breadcrumb.Item active style={{marginRight: '10px'}}>
+                    Webdevelopment/
+                  </Breadcrumb.Item>
+                  <Breadcrumb.Item href="/web-design">
+                    Webdesign{' '}
+                  </Breadcrumb.Item>
+                  <Breadcrumb.Item href="adobe">Adobe</Breadcrumb.Item>
+                </Breadcrumb>
 
                 <div className="background">
 
@@ -223,7 +296,7 @@ const Webdevelopment = ({data}) => {
                     style={{
                       marginTop: '0px',
                       padding: '0px',
-                      // background: 'white',
+                      background: 'white',
                     }}
                     className="about-page"
                   >
@@ -234,7 +307,7 @@ const Webdevelopment = ({data}) => {
                         className="about-text"
                         style={{
                           padding: '0px',
-                          // background: 'white',
+                          background: 'white',
                           padding: '10px',
                         }}
                       >
@@ -341,7 +414,7 @@ const Webdevelopment = ({data}) => {
 
             {/* ### */}
 
-            <div style={{marginTop: '20px', height: '50px'}} class="footer">
+            <div style={{marginTop: '20px', height: '50px'}} className="footer">
 
               <div>
 
