@@ -70,7 +70,7 @@ const Jobs = () => {
       style={{display:"flex", justifyContent:"center", background:"white"}}
       
       to="/about" className="btn center-btn">
-        more info
+        About Me
       </Link>
     </section>
   )

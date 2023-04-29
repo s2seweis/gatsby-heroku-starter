@@ -55,12 +55,18 @@ Global Styles
 
 *,
 ::after,
+
 ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* margin-top: revert; */
+  
+  
 }
+
+
+
+
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
@@ -520,13 +526,13 @@ Hero
   background: lightblue;
 }
 .hero-img {
-  display: none;
+  /* display: none; */
 }
 .hero-img-2 {
-  display: none;
+  /* display: none; */
 }
 .hero-img {
-  display: none;
+  /* display: none; */
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
@@ -547,10 +553,11 @@ Hero
     right: 0;
     bottom: 0;
     background: var(--clr-white);
+    
   }
   .hero-center {
-    grid-template-columns: repeat(16, 1fr);
-    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-columns: repeat(16, 1fr); */
+    grid-template-columns: repeat(12, 1fr);
   }
 
   .hero h4 {
@@ -668,6 +675,7 @@ Jobs
   border-radius: 20px;
   /* height: 60%; */
   margin: auto;
+  margin-bottom: 20px;
 }
 .job-btn1 {
   background: transparent;
@@ -1587,4 +1595,202 @@ html {
 }
 .breadcrumb-item.active {
   color: var(--bs-breadcrumb-item-active-color);
+}
+
+
+/* ### - pseudo-elements */
+
+
+
+.test1 {
+
+height: 95vh;
+position: relative;
+background-image: url(../images/test3.jpg);
+background-image: linear-gradient(to bottom right, #00b09b, #96c93d);
+/* opacity: 0.3; */
+
+
+
+
+
+
+
+
+}
+
+.test2 {
+
+height: 95vh;
+position: relative;
+/* background-image: url(../images/test3.jpg); */
+background-image: url(../images/test4.png);
+
+
+
+
+
+
+
+
+}
+
+.test1::before {
+  content:'';
+  background-image: linear-gradient(to bottom right, #00b09b, #96c93d);
+  /* background-image: url(../images/test3.jpg); */
+  opacity: 0.2;
+  position: absolute;
+  
+}
+
+
+
+
+
+  /* background-image: url(../images/test3.jpg); */
+
+
+
+
+
+.img-web {
+
+
+  margin-top: 50px;
+  width: 30%;
+
+
+}
+
+
+
+.hero1 {
+  /* margin-top: -5rem; */
+  padding-top: 5rem;
+  height: 100vh;
+  /* background: antiquewhite; */
+  background-image: linear-gradient(to bottom right, #00b09b, #96c93d);
+  /* background-image: url(../images/test3.jpg); */
+
+
+  position: relative;
+}
+
+
+@media screen and (min-width: 992px) {
+  .hero1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    /* background: var(--clr-white); */
+    background-image: linear-gradient(to bottom right, #aab000, #db8bed);
+    
+  }
+  
+  /* .hero-center {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .hero h4 {
+    font-size: 0.85rem;
+  }
+  .hero-info {
+    grid-row: 1/1;
+    grid-column: 1 / span 8;
+  }
+  .hero-img {
+    display: block;
+    grid-row: 1/1;
+    grid-column: 7/-1;
+  }
+  .hero-img-2 {
+    width: 100%;
+    position: relative;
+    display: block;
+    grid-row: 1/1;
+    grid-column: 7/-1;
+  } */
+
+
+
+}
+
+
+.hero2 {
+  /* margin-top: -5rem; */
+  padding-top: 5rem;
+  height: 100vh;
+  background-image: url(../images/test4.png);
+
+  /* background: antiquewhite; */
+  /* background-image: linear-gradient(to bottom right, #00b09b, #96c93d); */
+  /* background-image: url(../images/test3.jpg); */
+
+
+  position: relative;
+}
+
+
+/* @media screen and (min-width: 992px) {
+  .hero2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, #aab000, #db8bed);
+    
+  } */
+  
+  /* .hero-center {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .hero h4 {
+    font-size: 0.85rem;
+  }
+  .hero-info {
+    grid-row: 1/1;
+    grid-column: 1 / span 8;
+  }
+  .hero-img {
+    display: block;
+    grid-row: 1/1;
+    grid-column: 7/-1;
+  }
+  .hero-img-2 {
+    width: 100%;
+    position: relative;
+    display: block;
+    grid-row: 1/1;
+    grid-column: 7/-1;
+  } */
+
+
+
+/* } */
+
+
+/* ### */
+
+
+.float-area{
+  height:100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-img{
+  transform: translateY(-10%);
+  animation: floater 1.5s infinite;
+  transition: ease 0.5s;
+  width: 80px;
+  height:80px;
 }

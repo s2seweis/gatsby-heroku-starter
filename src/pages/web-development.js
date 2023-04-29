@@ -3,6 +3,10 @@ import {graphql} from 'gatsby';
 // import Title from '../components/Title';
 import Seo from '../components/Seo';
 
+import Card from 'react-bootstrap/Card';
+
+import test3 from '../assets/images/test3.jpg';
+
 // import {FaReact, FaNodeJs} from 'react-icons/fa';
 // import {BsFiletypeHtml, BsFiletypeCss} from 'react-icons/bs';
 
@@ -111,57 +115,97 @@ const Webdevelopment = ({data}) => {
 
         <Seo title="Contact" />
 
-        <div className="top-head" />
-
         <div style={{margin: 'auto', marginBottom: '15px'}} className="top-web">
 
-          <div style={{height: '95vh'}} className="Test1">
+          {/* ### Header Element ### */}
 
-            <div style={{height: '70px'}} className="header1">
+          {/* <div style={{height: '70px'}} className="header1">
 
-              <h2 className="title-web" style={{marginBottom: '0px'}}>
-                Webdevelopment
-              </h2>
+            <h2 className="title-web" style={{marginBottom: '0px'}}>
+              Webdevelopment1
+            </h2>
 
-            </div>
+          </div> */}
 
-            <div
-              className="img-web-top"
-              style={{display:"flex", alignItems:"center", justifyContent:"center"}}
-            >
+          {/* Part:1 - ############## Start*/}
 
-              <div
-                className="img-web"
-                style={{marginTop: '50px', width: '30%'}}
-              >
+          {/* <header className="hero1">
 
+            <section className="section-center hero-center">
+
+              <StaticImage
+                src="../assets/images/hero.svg"
+                alt="portfolio"
+                className="hero-img"
+                placeholder="blurred"
+              />
+
+            </section>
+
+          </header> */}
+
+          {/* Part:1 - ############## End*/}
+
+          {/* Part:2 - ############## Start*/}
+
+          <header className="hero2">
+
+            <section className="section-center hero-center">
+
+              <h2
+              
+              style={{display:"block", gridColumn:"3/7", lineHeight:"1"}}
+              
+              >  Just an Grid Test, just try to find out some stuff!  </h2>
+
+              <StaticImage
+                src="../assets/images/hero.svg"
+                alt="portfolio"
+                className="hero-img"
+                placeholder="blurred"
+              />
+
+            </section>
+
+          </header>
+
+          {/* Part:2 - ############## End*/}
+
+          {/* Part:3 - ############## Start*/}
+
+          <header className="hero2">
+
+            <section className="section-center hero-center">
+
+              <StaticImage
+                src="../assets/images/test5.png"
+                alt="portfolio"
+                className="hero-img"
+                placeholder="blurred"
+              />
+
+              <div class="float-area">
                 <StaticImage
-                  src="../assets/images/hero.svg"
-                  alt="portfolio"
-                  className="hero-img"
-                  placeholder="blurred"
+                  src="../assets/images/test5.png"
+                  class="floating-img"
+                  alt="my floating image"
                 />
-
+                <br />
+                <span>Flaoting pop corn</span>
               </div>
 
-              <div className="part2" style={{width: '30%', marginTop: '50px'}}>
+            </section>
 
-                <p>Test1</p>
-                <p>Test2</p>
-                <p>Test3</p>
+          </header>
 
-              </div>
+          {/* Part:3 - ############## End*/}
 
-            </div>
 
-            {/* ### */}
 
-          </div>
+        
 
           <div className="Test2">
 
-            {/* ### - Header*/}
-
             <div style={{height: '70px'}} className="header1">
 
               <h2 className="title-web" style={{marginBottom: '0px'}}>
@@ -169,47 +213,12 @@ const Webdevelopment = ({data}) => {
               </h2>
 
             </div>
-
-            {/* ### */}
 
             <div className="row" style={{background: 'var(--clr-grey-10)'}}>
               <div
                 style={{padding: '15px 15px 0px 15px'}}
                 className="col-3 menu"
               >
-
-                {/* <div
-                  className="menu-sub"
-                  // ### making bootstrap breadcrumb out of it
-
-                  style={{
-                    marginBottom: '15px',
-                    alignItems: 'center',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    gap: '25px',
-                  }}
-                >
-
-                  <div>
-
-                    <Link to="/web-design" className="btn1">
-                      Webdesign
-                    </Link>
-                  </div>
-
-                  <div>
-
-                    <Link to="/adobe" className="btn1">
-                      Adobe
-                    </Link>
-                  </div>
-
-                </div> */}
-
-                {/* ### */}
-
-                {/* ### */}
 
                 <Accordion style={{}}>
                   <Accordion.Item eventKey="0">
@@ -289,8 +298,6 @@ const Webdevelopment = ({data}) => {
                 </Breadcrumb>
 
                 <div className="background">
-
-                  {/* ### New Content */}
 
                   <section
                     style={{
@@ -400,19 +407,11 @@ const Webdevelopment = ({data}) => {
 
                   </section>
 
-                  {/* ### New Content End */}
-
                 </div>
 
               </div>
 
-              {/* ### */}
-
-              {/* ### */}
-
             </div>
-
-            {/* ### */}
 
             <div style={{marginTop: '20px', height: '50px'}} className="footer">
 
@@ -429,10 +428,6 @@ const Webdevelopment = ({data}) => {
         </div>
 
       </div>
-
-      {/* ### */}
-
-      {/* ### */}
 
     </div>
   );
