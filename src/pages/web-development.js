@@ -111,7 +111,11 @@ const Webdevelopment = ({data}) => {
 
       <Seo title="About" />
 
-      <div style={{background: 'var(--clr-grey-10)'}} className="head-top">
+      <div style={{
+        // background: 'var(--clr-grey-10)',
+        background: "linear-gradient(to bottom right, #00b09b, #96c93d)"
+        
+        }} className="head-top">
 
         <Seo title="Contact" />
 
@@ -165,6 +169,9 @@ const Webdevelopment = ({data}) => {
                 placeholder="blurred"
               />
 
+
+              <div className='gradient'>Gradient Test</div>
+
             </section>
 
           </header>
@@ -184,15 +191,14 @@ const Webdevelopment = ({data}) => {
                 placeholder="blurred"
               />
 
-              <div class="float-area">
-                <StaticImage
-                  src="../assets/images/test5.png"
-                  class="floating-img"
-                  alt="my floating image"
-                />
-                <br />
-                <span>Flaoting pop corn</span>
-              </div>
+              <StaticImage
+              style={{display:"block", gridRow:"1/1", gridColumn:"1/4"}}
+                src="../assets/images/hero.svg"
+                alt="portfolio"
+                className="hero-img1"
+              />
+
+            
 
             </section>
 
@@ -413,7 +419,10 @@ const Webdevelopment = ({data}) => {
 
             </div>
 
-            <div style={{marginTop: '20px', height: '50px'}} className="footer">
+            <div style={{
+              // marginTop: '20px', 
+              height: '50px'}} 
+              className="footer">
 
               <div>
 

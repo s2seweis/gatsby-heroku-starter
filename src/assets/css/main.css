@@ -1664,6 +1664,16 @@ background-image: url(../images/test4.png);
 }
 
 
+/* .gradient {
+
+
+  background-image: linear-gradient(to bottom right, #00b09b, #96c93d);
+
+
+
+} */
+
+
 
 .hero1 {
   /* margin-top: -5rem; */
@@ -1725,6 +1735,8 @@ background-image: url(../images/test4.png);
   padding-top: 5rem;
   height: 100vh;
   background-image: url(../images/test4.png);
+  /* background-image: linear-gradient(to bottom right, #00b09b, #96c93d); */
+
 
   /* background: antiquewhite; */
   /* background-image: linear-gradient(to bottom right, #00b09b, #96c93d); */
