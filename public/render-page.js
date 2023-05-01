@@ -4671,7 +4671,19 @@ const data = [{
   text: "projects",
   url: "/projects/"
 }, {
+  id: 4,
+  text: "Stack",
+  url: "/web-development/"
+}, {
   id: 5,
+  text: "Webdesign",
+  url: "/web-design/"
+}, {
+  id: 6,
+  text: "Adobe",
+  url: "/adobe/"
+}, {
+  id: 7,
   text: "contact",
   url: "/contact/"
 }
