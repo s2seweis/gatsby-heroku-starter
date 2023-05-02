@@ -32,6 +32,8 @@ import Card from 'react-bootstrap/Card';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
 import {StaticImage} from 'gatsby-plugin-image';
 
 // ###
@@ -60,9 +62,9 @@ export const Webdesign = () => {
             <article className="hero-info">
               <div>
 
-                <h1 style={{textAlign: 'center'}}>i'm sebastian</h1>
-                <h4 style={{textAlign: 'center'}}>
-                  freelance web and mobile UI/UX Designer
+                <h1 style={{textAlign: 'center', color:"var(--clr-grey-1)"}}>i'm sebastian</h1>
+                <h4 style={{textAlign: 'center', color:"white"}}>
+                  Crafting beautiful and functional websites.
                 </h4>
                 <div style={{margin: 'auto'}} className="underline" />
 
@@ -74,12 +76,12 @@ export const Webdesign = () => {
               </div>
             </article>
 
-            {/* <StaticImage
-              src="../assets/images/hero.svg"
+            <StaticImage
+              src="../assets/images/5.png"
               alt="portfolio"
               className="hero-img"
               placeholder="blurred"
-            /> */}
+            />
 
             {/* <img src={heroImg} alt="portfolio" className="hero-img-svg" /> */}
           </section>
@@ -275,6 +277,32 @@ export const Webdesign = () => {
               class="col-6"
             >
 
+              <Breadcrumb style={{display: 'flex', justifyContent: 'center'}}>
+
+                <Breadcrumb.Item
+                  href="/web-development"
+                  // active style={{marginRight: '10px'}}
+                >
+                  Webdevelopment
+                </Breadcrumb.Item>
+
+                {/* ### */}
+
+                <Breadcrumb.Item 
+                active style={{marginRight: '10px'}}
+                href="/web-design">
+                  / Webdesign
+                </Breadcrumb.Item>
+
+                {/* ### */}
+
+                <Breadcrumb.Item 
+                href="adobe">
+                  Adobe
+                </Breadcrumb.Item>
+
+              </Breadcrumb>
+
               <div className="background">
 
                 <div class="container">
@@ -284,7 +312,7 @@ export const Webdesign = () => {
                       justifyContent: 'center',
                       textAlign: 'center',
                       marginTop: '10px',
-                      textTransform:"capitalize"
+                      textTransform: 'capitalize',
                     }}
                     class="title"
                   >
@@ -304,12 +332,13 @@ export const Webdesign = () => {
                   }}
                 >
 
-                  I build visually appealing, functional, and user-friendly websites that effectively communicate a message, provide a positive user experience, and ultimately achieve the goals of the website owner. 
+                  I build visually appealing, functional, and user-friendly websites that effectively communicate a message, provide a positive user experience, and ultimately achieve the goals of the website owner.
+                  {' '}
                 </p>
 
-                <p 
-                style={{textAlign:"center"}}
-                >"Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs</p>
+                <p style={{textAlign: 'center'}}>
+                  "Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs
+                </p>
 
                 <Carousel
                   style={{background: 'lightblue', borderRadius: '25px'}}

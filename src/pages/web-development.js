@@ -167,14 +167,37 @@ const Webdevelopment = ({data}) => {
               <div style={{marginTop: '50px'}} class="ag-format-container">
 
 
+
+              <article className="hero-info">
+              <div
+              className='webdevelopment-stack'
+              style={{width:"350px"}}
+              >
+
+                <h1 style={{textAlign: 'center', color:"var(--clr-grey-1)"}}>i'm sebastian</h1>
+                <h4 style={{textAlign: 'center', color:"white"}}>
+                Building digital solutions that bring your ideas to life.
+                </h4>
+                <div style={{margin: 'auto'}} className="underline" />
+
+                <div
+                  className="center"
+                  style={{display: 'flex', justifyContent: 'center'}}
+                />
+
+              </div>
+            </article>
+
                 <div 
                 style={{
                   // width:"400px", 
-                  marginTop:"50px"}}
+                  }}
                 className='h2-h4'>
 
 
-                <h2>Building digital solutions that bring your ideas to life.</h2>
+                {/* <h2
+                style={{margin:"auto", width:"350px"}}
+                >Building digital solutions that bring your ideas to life.</h2> */}
 
                 {/* <h4
                 style={{marginTop:"50px"}}

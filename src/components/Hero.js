@@ -13,7 +13,7 @@ const Hero = () => {
 
 
           <h1 style={{textAlign: 'center'}}>i'm sebastian</h1>
-            <h4 style={{textAlign: 'center'}}>
+            <h4 style={{textAlign: 'center', color:"white"}}>
               freelance web and mobile UI/UX Designer
             </h4>
             <div 
