@@ -5,7 +5,7 @@ import Seo from '../components/Seo';
 
 import Card from 'react-bootstrap/Card';
 
-import test3 from '../assets/images/test3.jpg';
+// import test3 from '../assets/images/test3.jpg';
 
 // import {FaReact, FaNodeJs} from 'react-icons/fa';
 // import {BsFiletypeHtml, BsFiletypeCss} from 'react-icons/bs';
@@ -109,11 +109,11 @@ const Webdevelopment = ({data}) => {
   return (
     <div>
 
-      <Seo title="About" />
+      <Seo title="Stack" />
 
       <div style={{}} className="head-top">
 
-        <Seo title="Contact" />
+        <Seo title="Stack" />
 
         <div style={{margin: 'auto', marginBottom: '15px'}} className="top-web">
 
@@ -157,56 +157,47 @@ const Webdevelopment = ({data}) => {
           <header className="hero">
 
             <div
-              style={{height: '91vh', backgroundColor: 'lightblue'}}
+              style={{
+                height: '91vh',
+                backgroundColor: 'lightblue',
+                display: 'contents',
+              }}
               class="ag-maecenas_title"
             >
-              <div class="ag-format-container">
-              Hello my Friend
-
-                <h4>Just a short list of tools that I currently use. At the moment I am busy with webdesign.</h4>
+              <div style={{marginTop: '50px'}} class="ag-format-container">
 
 
+                <div 
+                style={{
+                  // width:"400px", 
+                  marginTop:"50px"}}
+                className='h2-h4'>
+
+
+                <h2>Building digital solutions that bring your ideas to life.</h2>
+
+                {/* <h4
+                style={{marginTop:"50px"}}
+                >
+                 Building digital solutions that bring your ideas to life.
+                </h4> */}
+
+                </div>
 
                 <StaticImage
-                style={{}}
+                  style={{}}
                   src="../assets/images/group.png"
                   alt="portfolio"
                   className="hero-img8"
                   placeholder="blurred"
                 />
 
+                
+
               </div>
             </div>
 
-            <section className="section-center hero-center">
-
-              {/* <article className="hero-info1">
-                <div>
-
-                  <h1 style={{textAlign: 'center'}}>Hello my friend</h1>
-                  <h3
-                    className="h3-webdesign"
-                    style={{
-                      textAlign: 'center',
-                      width: '350px',
-                      textTransform: 'inherit',
-                    }}
-                  >
-                    Just a short list of tools that I currently use. At the moment I am busy with webdesign.
-                  </h3>
-                  <div style={{margin: 'auto'}} className="underline" />
-
-                </div>
-              </article> */}
-
-              {/* <StaticImage
-                src="../assets/images/group.png"
-                alt="portfolio"
-                className="hero-img"
-                placeholder="blurred"
-              /> */}
-
-            </section>
+          
 
           </header>
 
