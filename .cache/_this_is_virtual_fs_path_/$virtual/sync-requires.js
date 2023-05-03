@@ -12,6 +12,7 @@ exports.components = {
   "component---src-pages-index-js": preferDefault(require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/src/pages/index.js")),
   "component---src-pages-projects-js": preferDefault(require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/src/pages/projects.js")),
   "component---src-pages-projects-strapi-projects-title-js": preferDefault(require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/src/pages/projects/{StrapiProjects.title}.js")),
+  "component---src-pages-thankyou-js": preferDefault(require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/src/pages/thankyou.js")),
   "component---src-pages-web-design-js": preferDefault(require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/src/pages/web-design.js")),
   "component---src-pages-web-development-js": preferDefault(require("/Users/SWT/Desktop/gatsby/gatsby-strapi-version3/gatsby-heroku-starter/src/pages/web-development.js"))
 }

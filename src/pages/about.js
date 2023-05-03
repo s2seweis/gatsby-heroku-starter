@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Seo from "../components/Seo"
 
+import me from '../assets/images/me.jpg'
+
 
 
 const About = ({ data }) => {
@@ -25,7 +27,8 @@ const About = ({ data }) => {
         // style={{display:"flex"}}
         
         className="section-center1 about-center">
-          <img src={image.localFile.publicURL} alt={title} className="about-img-svg" />
+          {/* <img src={image.localFile.publicURL} alt={title} className="about-img-svg" /> */}
+          <img style={{marginTop:"30px", marginRight:"20px"}} src={me} alt={title} className="about-img-svg" />
 
 
 

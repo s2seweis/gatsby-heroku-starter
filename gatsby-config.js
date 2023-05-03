@@ -42,7 +42,7 @@ module.exports = {
         singleTypes: [`about`, `development`, 
         
         
-        // `adobe`
+        `adobe`
       
       ]
       },

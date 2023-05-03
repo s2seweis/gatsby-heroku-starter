@@ -256,6 +256,7 @@ p {
   margin-right: auto;
 }
 .section-title {
+  margin-top: 5rem;
   /* margin-bottom: 4rem; */
   text-align: center;
 }
@@ -505,7 +506,8 @@ Hero
 */
 /* underline added to globals */
 .hero {
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
+  margin-top: 0rem;
   padding-top: 5rem;
   height: 100vh;
   background: lightblue;
@@ -861,7 +863,7 @@ Projects
   color: var(--clr-primary-5);
 }
 .project-desc {
-  word-spacing: 15px;
+  word-spacing: 5px;
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -2203,6 +2205,36 @@ width: 350px;
   .webdevelopment-stack  {
 /* margin-top: -80px; */
 margin: auto 
+/* margin-top: -20px; */
+}
+}
+
+
+.adobe5{
+
+display: flex;
+
+}
+
+
+@media only screen and (max-width: 450px) {
+  .adobe5  {
+    display: grid;
+/* margin-top: -80px; */
+/* margin-top: -20px; */
+}
+}
+
+.img-adobe {
+
+width: 50%;
+
+}
+
+@media only screen and (max-width: 450px) {
+  .img-adobe  {
+    width: 100%;
+/* margin-top: -80px; */
 /* margin-top: -20px; */
 }
 }

@@ -45,14 +45,18 @@ import Accordion from 'react-bootstrap/Accordion';
 // import Card from 'react-bootstrap/Card';
 // import Carousel from 'react-bootstrap/Carousel';
 
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+// import Breadcrumb from 'react-bootstrap/Breadcrumb';
 // ###
 
-import '../components/custom.css';
+// import '../components/custom.css';
+
+import 'semantic-ui-css/semantic.min.css';
 
 import React, {useState} from 'react';
 
 import {StaticImage} from 'gatsby-plugin-image';
+
+import {Breadcrumb} from 'semantic-ui-react';
 
 export const query = graphql`
   {
@@ -166,40 +170,42 @@ const Webdevelopment = ({data}) => {
             >
               <div style={{marginTop: '50px'}} class="ag-format-container">
 
+                <article className="hero-info">
+                  <div
+                    className="webdevelopment-stack"
+                    style={{width: '350px'}}
+                  >
 
+                    <h1
+                      style={{textAlign: 'center', color: 'var(--clr-grey-1)'}}
+                    >
+                      i'm sebastian
+                    </h1>
+                    <h4 style={{textAlign: 'center', color: 'white'}}>
+                      Building digital solutions that bring your ideas to life.
+                    </h4>
+                    <div style={{margin: 'auto'}} className="underline" />
 
-              <article className="hero-info">
-              <div
-              className='webdevelopment-stack'
-              style={{width:"350px"}}
-              >
+                    <div
+                      className="center"
+                      style={{display: 'flex', justifyContent: 'center'}}
+                    />
 
-                <h1 style={{textAlign: 'center', color:"var(--clr-grey-1)"}}>i'm sebastian</h1>
-                <h4 style={{textAlign: 'center', color:"white"}}>
-                Building digital solutions that bring your ideas to life.
-                </h4>
-                <div style={{margin: 'auto'}} className="underline" />
+                  </div>
+                </article>
 
                 <div
-                  className="center"
-                  style={{display: 'flex', justifyContent: 'center'}}
-                />
-
-              </div>
-            </article>
-
-                <div 
-                style={{
-                  // width:"400px", 
+                  style={{
+                    // width:"400px",
                   }}
-                className='h2-h4'>
+                  className="h2-h4"
+                >
 
-
-                {/* <h2
+                  {/* <h2
                 style={{margin:"auto", width:"350px"}}
                 >Building digital solutions that bring your ideas to life.</h2> */}
 
-                {/* <h4
+                  {/* <h4
                 style={{marginTop:"50px"}}
                 >
                  Building digital solutions that bring your ideas to life.
@@ -215,12 +221,8 @@ const Webdevelopment = ({data}) => {
                   placeholder="blurred"
                 />
 
-                
-
               </div>
             </div>
-
-          
 
           </header>
 
@@ -241,62 +243,6 @@ const Webdevelopment = ({data}) => {
                 style={{padding: '15px 15px 0px 15px'}}
                 className="col-3 menu"
               >
-
-                {/* <Accordion style={{}}>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header style={{marginTop: '0px'}}>
-                      What is web design everything about?
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Web design is the field that involves digital interfaces such as websites,
-
-                      apps, and services.
-                      By using HTML code to program websites and CSS to standardize its visual language,
-
-                      web design professionals are responsible for building digital experiences to be used by the public.
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="1">
-                    <Accordion.Header>
-                      How to be a good web designer?
-                    </Accordion.Header>
-
-                    <Accordion.Body>
-
-                      <p style={{marginBottom: '0px'}}>
-                        {' '}1. Avoid hectic color schemes.
-                      </p>
-                      <p style={{marginBottom: '0px'}}>
-                        {' '}2. Put some thought into the images you include.
-                      </p>
-                      <p style={{marginBottom: '0px'}}> 3. Learn about SEO.</p>
-                      <p style={{marginBottom: '0px'}}>
-                        {' '}4. Use responsive design.
-                      </p>
-                      <p style={{marginBottom: '0px'}}>
-                        {' '}5. Keep typography consistent.
-                      </p>
-                      <p style={{marginBottom: '0px'}}>
-                        {' '}6. Keep diversity and inclusion in mind.
-                      </p>
-                      <p style={{marginBottom: '0px'}}>
-                        {' '}7. Define who you are as a designer
-                      </p>
-
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey="2">
-                    <Accordion.Header>
-                      What is effective web design?
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      Rather than trying to force the viewer's visual flow,
-                      effectively designed websites will work with a reader's natural behaviour
-
-                      and display information in order of importance (left to right, and top to bottom).
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion> */}
 
                 <div>
 
@@ -603,15 +549,47 @@ const Webdevelopment = ({data}) => {
                 className="col-6"
               >
 
-                <Breadcrumb style={{display: 'flex', justifyContent: 'center'}}>
+                {/* ### */}
+
+                {/* <Breadcrumb style={{display: 'flex', justifyContent: 'center'}}>
                   <Breadcrumb.Item active style={{marginRight: '10px'}}>
                     Webdevelopment/
                   </Breadcrumb.Item>
                   <Breadcrumb.Item href="/web-design">
                     Webdesign{' '}
                   </Breadcrumb.Item>
-                  <Breadcrumb.Item href="adobe">Adobe</Breadcrumb.Item>
-                </Breadcrumb>
+                  <Breadcrumb.Item href="/404">Adobe</Breadcrumb.Item>
+                </Breadcrumb> */}
+
+                {/* <Breadcrumb>
+                  <Breadcrumb.Section link>Home</Breadcrumb.Section>
+                  <Breadcrumb.Divider />
+                  <Breadcrumb.Section link>Store</Breadcrumb.Section>
+                  <Breadcrumb.Divider />
+                  <Breadcrumb.Section active>T-Shirt</Breadcrumb.Section>
+                </Breadcrumb> */}
+
+                <div 
+                style={{display:"flex", justifyContent:"center"}}
+                className="semantic-ui-1">
+
+                  <div class="ui breadcrumb">
+                    {/* <a class="section" href='/web-development'>Stack</a> */}
+                    <div class="active section " href="/adobe" >Stack</div>
+
+                    <div class="divider">/</div>
+                    <a class="section" href='/web-design'>Webdesign</a>
+                    {/* <div class="active section " href="/adobe" >Webdesign</div> */}
+
+
+                    <div class="divider">/</div>
+                    <a class="section" href='/adobe'>Adobe</a>
+                    {/* <div class="active section " href="/adobe" >Adobe</div> */}
+
+                  </div>
+                </div>
+
+                {/* ### */}
 
                 <div className="background">
 

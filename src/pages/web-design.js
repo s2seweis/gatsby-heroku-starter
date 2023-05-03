@@ -62,8 +62,10 @@ export const Webdesign = () => {
             <article className="hero-info">
               <div>
 
-                <h1 style={{textAlign: 'center', color:"var(--clr-grey-1)"}}>i'm sebastian</h1>
-                <h4 style={{textAlign: 'center', color:"white"}}>
+                <h1 style={{textAlign: 'center', color: 'var(--clr-grey-1)'}}>
+                  i'm sebastian
+                </h1>
+                <h4 style={{textAlign: 'center', color: 'white'}}>
                   Crafting beautiful and functional websites.
                 </h4>
                 <div style={{margin: 'auto'}} className="underline" />
@@ -277,31 +279,25 @@ export const Webdesign = () => {
               class="col-6"
             >
 
-              <Breadcrumb style={{display: 'flex', justifyContent: 'center'}}>
+              <div
+                style={{display: 'flex', justifyContent: 'center'}}
+                className="semantic-ui-1"
+              >
 
-                <Breadcrumb.Item
-                  href="/web-development"
-                  // active style={{marginRight: '10px'}}
-                >
-                  Webdevelopment
-                </Breadcrumb.Item>
+                <div class="ui breadcrumb">
+                  <a class="section" href="/web-development">Stack</a>
+                  {/* <div class="active section " href="/adobe">Stack</div> */}
 
-                {/* ### */}
+                  <div class="divider">/</div>
+                  {/* <a class="section" href="/web-design">Webdesign</a> */}
+                  <div class="active section " href="/adobe">Webdesign</div>
 
-                <Breadcrumb.Item 
-                active style={{marginRight: '10px'}}
-                href="/web-design">
-                  / Webdesign
-                </Breadcrumb.Item>
+                  <div class="divider">/</div>
+                  <a class="section" href="/adobe">Adobe</a>
+                  {/* <div class="active section " href="/adobe" >Adobe</div> */}
 
-                {/* ### */}
-
-                <Breadcrumb.Item 
-                href="adobe">
-                  Adobe
-                </Breadcrumb.Item>
-
-              </Breadcrumb>
+                </div>
+              </div>
 
               <div className="background">
 

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-projects-strapi-projects-title-js",
     "path": "/projects/gatsby-project/",
-    "result": {"data":{"strapiProjects":{"description":"Gatsby is an open-source static site generator built on top of Node.js using React and GraphQL. It provides over 2500 plugins to create static sites based on sources as Markdown documents, MDX, images, and numerous Content Management Systems such as WordPress, Drupal and more.\n\nHere I used Gatsby for building my portfolio. ","title":"GATSBY PROJECT","image":{"localFile":{"publicURL":"/static/7684c28c22f5cebc1a9016c2691399e6/projects_4_b41fb78b75.jpg"}}}},"pageContext":{"id":"Projects_4","title":"GATSBY PROJECT","__params":{"title":"gatsby-project"}}},
+    "result": {"data":{"strapiProjects":{"description":"For my portfolio I used Gatsby and Strapi. \nIt was an interesting experience using a CMS for building a website. \n","title":"GATSBY PROJECT","image":{"localFile":{"publicURL":"/static/b5f21ad81633b527a35c5876df692677/Screen_Shot_2023_05_03_at_2_53_49_PM_88da2e8652.png"}}}},"pageContext":{"id":"Projects_4","title":"GATSBY PROJECT","__params":{"title":"gatsby-project"}}},
     "staticQueryHashes": []}

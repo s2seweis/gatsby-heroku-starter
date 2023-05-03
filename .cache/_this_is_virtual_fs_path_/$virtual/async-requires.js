@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-projects-js": () => import("./../../../src/pages/projects.js" /* webpackChunkName: "component---src-pages-projects-js" */),
   "component---src-pages-projects-strapi-projects-title-js": () => import("./../../../src/pages/projects/{StrapiProjects.title}.js" /* webpackChunkName: "component---src-pages-projects-strapi-projects-title-js" */),
+  "component---src-pages-thankyou-js": () => import("./../../../src/pages/thankyou.js" /* webpackChunkName: "component---src-pages-thankyou-js" */),
   "component---src-pages-web-design-js": () => import("./../../../src/pages/web-design.js" /* webpackChunkName: "component---src-pages-web-design-js" */),
   "component---src-pages-web-development-js": () => import("./../../../src/pages/web-development.js" /* webpackChunkName: "component---src-pages-web-development-js" */)
 }

@@ -7,7 +7,7 @@ const contact = () => {
       <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
-          <form>
+          <form action="https://formsubmit.co/weissenborn.sebastian@gmail.com" method="POST">
             <div className="form-group">
               <input
                 type="text"
@@ -15,11 +15,18 @@ const contact = () => {
                 placeholder="name"
                 className="form-control"
               />
+              <input type="hidden" name="_captcha" value="false"></input>
+              <input type="hidden" name="_next" value="http://localhost:8000/thankyou"></input>
+
+              <input type="hidden" name="_subject" value="Message From My Portfolio!!!"></input>
+
+
               <input
                 type="email"
                 name="email"
                 placeholder="email"
                 className="form-control"
+                required
               />
               <textarea
                 name="message"
@@ -28,7 +35,7 @@ const contact = () => {
                 className="form-control"
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn btn">
+            <button style={{backgroundColor:"lightblue"}} type="submit" className="submit-btn btn">
               submit here
             </button>
           </form>
