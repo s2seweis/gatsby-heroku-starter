@@ -16,7 +16,7 @@ const contact = () => {
                 className="form-control"
               />
               <input type="hidden" name="_captcha" value="false"></input>
-              <input type="hidden" name="_next" value="http://localhost:8000/thankyou"></input>
+              <input type="hidden" name="_next" value="https://precious-conkies-b8586b.netlify.app/thankyou"></input>
 
               <input type="hidden" name="_subject" value="Message From My Portfolio!!!"></input>
 

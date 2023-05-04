@@ -5,6 +5,9 @@ import Seo from "../components/Seo"
 
 import me from '../assets/images/me.jpg'
 
+import CV from '../assets/images/CV.pdf';
+
+
 
 
 const About = ({ data }) => {
@@ -42,10 +45,23 @@ const About = ({ data }) => {
             
 
 
-              <button style={{marginBottom:"20px", padding:"10px", background:"lightblue", border:"none"}}>
+              {/* <button style={{marginBottom:"20px", padding:"10px", background:"lightblue", border:"none"}}>
 
             <a 
               href="/files/CV.pdf"
+              alt="alt text"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              Download CV
+            </a>
+
+              </button> */}
+
+              <button style={{marginBottom:"20px", padding:"10px", background:"lightblue", border:"none"}}>
+
+            <a 
+              href={CV}
               alt="alt text"
               target="_blank"
               rel="noopener noreferrer"
