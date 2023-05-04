@@ -57,6 +57,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import Preloader from '../components/loader';
 
+import ScrollToTop from "react-scroll-to-top";
+
+
 // ###
 
 export const query = graphql`
@@ -124,6 +127,9 @@ const Adobe = ({data}) => {
       <Seo title="About" />
 
       <div style={{background: 'var(--clr-grey-10)'}} className="head-top">
+
+      <ScrollToTop smooth color="#6f00ff" />
+
 
         <Seo title="Adobe" />
 

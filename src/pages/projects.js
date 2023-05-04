@@ -2,6 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
 import Seo from "../components/Seo"
+
+import ScrollToTop from "react-scroll-to-top";
+
 const ProjectsPage = ({
   data: {
     allStrapiProjects: { nodes: projects },
@@ -11,6 +14,7 @@ const ProjectsPage = ({
     <>
       <Seo title="Projects" />
       <main>
+      <ScrollToTop smooth color="#6f00ff" />
         <section className="projects-page">
           <Projects title="all projects" projects={projects} />
         </section>
