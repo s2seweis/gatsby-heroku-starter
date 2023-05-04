@@ -51,6 +51,7 @@ const Hero = () => {
         </article>
 
         <StaticImage
+        style={{width:"65%", margin:"auto"}}
           src="../assets/images/hero.svg"
           alt="portfolio"
           className="hero-img"

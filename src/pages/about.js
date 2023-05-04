@@ -34,19 +34,19 @@ const About = ({ data }) => {
         
         className="section-center1 about-center">
           {/* <img src={image.localFile.publicURL} alt={title} className="about-img-svg" /> */}
-          {/* <img style={{marginTop:"30px", marginRight:"20px"}} src={me} alt={title} className="about-img-svg" /> */}
+          <img style={{marginTop:"30px", width:"230px"}} src={me} alt={title} className="about-img-svg" />
 
         
 
                 <div style={{display:"flex"}}>
   
-              <StaticImage
+              {/* <StaticImage
                   style={{}}
                   src="../assets/images/me.jpg"
                   alt="portfolio"
                   className="hero-img8"
                   placeholder="blurred"
-                  />
+                  /> */}
 
                   </div>
 
@@ -73,7 +73,7 @@ const About = ({ data }) => {
 
 
             
-            <p>{info}</p>
+            <p style={{marginLeft:"20px"}}>{info}</p>
             
 
 
@@ -90,7 +90,7 @@ const About = ({ data }) => {
 
               </button> */}
 
-              <button style={{marginBottom:"20px", padding:"10px", background:"lightblue", border:"none"}}>
+              <button style={{marginBottom:"20px", padding:"10px", background:"lightblue", border:"none", marginLeft:"20px"}}>
 
             <a 
               href={CV}
