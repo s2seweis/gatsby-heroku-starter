@@ -40,7 +40,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <ul className={isOpen ? "sidebar-links" : null}>
           {links.map(link => {
             return (
-              <li key={link.id}>
+              <li style={{ padding:"10px" }} key={link.id}>
                 <Link to={link.url} onClick={toggleSidebar}>
                   {link.text}
                 </Link>

@@ -4627,6 +4627,9 @@ const Sidebar = ({
     className: isOpen ? "sidebar-links" : null
   }, _constants_links__WEBPACK_IMPORTED_MODULE_1__["default"].map(link => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+      style: {
+        padding: "10px"
+      },
       key: link.id
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__.Link, {
       to: link.url,
@@ -4720,19 +4723,19 @@ const data = [{
   icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__.FaFacebookSquare, {
     className: "social-icon"
   }),
-  url: "https://www.twitter.com"
-}, {
-  id: 2,
-  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__.FaLinkedin, {
-    className: "social-icon"
-  }),
-  url: "https://www.twitter.com"
-}, {
+  url: "https://www.facebook.com/people/Basti-Wei%C3%9Fenborn/pfbid02eL8CSEQUiA8or6yr8HS54a5BtScUX4JzXE3EUGncJ2hUxXqhdEqxRB4uKek5m1Yzl/?mibextid=ZbWKwL"
+},
+// {
+//   id: 2,
+//   icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+//   url: "https://www.twitter.com",
+// },
+{
   id: 3,
   icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_1__.FaGithub, {
     className: "social-icon"
   }),
-  url: "https://www.twitter.com"
+  url: "https://github.com/s2seweis"
 }
 // {
 //   id: 4,

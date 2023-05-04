@@ -39,8 +39,21 @@ const About = ({ data }) => {
           <article className="about-text">
             <Title title={title} />
             <p>{info}</p>
+            
 
 
+              <button style={{marginBottom:"20px", padding:"10px", background:"lightblue", border:"none"}}>
+
+            <a 
+              href="/files/CV.pdf"
+              alt="alt text"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              Download CV
+            </a>
+
+              </button>
 
 
             <div className="about-stack">
