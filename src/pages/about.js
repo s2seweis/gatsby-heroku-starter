@@ -7,6 +7,9 @@ import me from '../assets/images/me.jpg'
 
 import CV from '../assets/images/CV.pdf';
 
+import {StaticImage} from 'gatsby-plugin-image';
+
+
 
 
 
@@ -31,8 +34,21 @@ const About = ({ data }) => {
         
         className="section-center1 about-center">
           {/* <img src={image.localFile.publicURL} alt={title} className="about-img-svg" /> */}
-          <img style={{marginTop:"30px", marginRight:"20px"}} src={me} alt={title} className="about-img-svg" />
+          {/* <img style={{marginTop:"30px", marginRight:"20px"}} src={me} alt={title} className="about-img-svg" /> */}
 
+        
+
+                <div style={{display:"flex"}}>
+  
+              <StaticImage
+                  style={{}}
+                  src="../assets/images/me.jpg"
+                  alt="portfolio"
+                  className="hero-img8"
+                  placeholder="blurred"
+                  />
+
+                  </div>
 
 
          
@@ -40,7 +56,23 @@ const About = ({ data }) => {
 
 
           <article className="about-text">
+
+                <div style={{display:"flex", justifyContent:"center"}}>
+
+          {/* <StaticImage
+                  style={{}}
+                  src="../assets/images/me.jpg"
+                  alt="portfolio"
+                  className="hero-img8"
+                  placeholder="blurred"
+                  /> */}
+
+                  </div>
             <Title title={title} />
+
+
+
+            
             <p>{info}</p>
             
 
