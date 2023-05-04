@@ -36,8 +36,7 @@ Building the Project:
 npm run build
 
 Run the Project:
-npm start
+npm start or gatsbydevelop
 
-127.0.0.1:1337
 
-!!!working repo on github!!!
+
