@@ -5,7 +5,7 @@ import Seo from "../components/Seo"
 
 import me from '../assets/images/me.jpg'
 
-import CV from '../assets/images/CV.pdf';
+import CV from '../assets/images/CV-v1.pdf';
 
 import {StaticImage} from 'gatsby-plugin-image';
 
