@@ -15,7 +15,7 @@ const Project = ({
 }) => {
   return (
     <article className="project">
-      <GatsbyImage
+      <GatsbyImage style={{ height:"auto" }}
         image={getImage(image.localFile)}
         className="project-img"
         alt={title}
