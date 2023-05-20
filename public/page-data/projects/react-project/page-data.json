@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-projects-strapi-projects-title-js",
-    "path": "/projects/react-project/",
-    "result": {"data":{"strapiProjects":{"description":"With this application i really started to dig deeper into the programming. This is a project where I tried out a lot of packages and functionality. I was quite interested into building my own e-commerce system for restaurants. \n\nSo far it hat already:\n-admin area\n-manage orders\n-manage customers \n-add product\n-add ingredients\n-stripe Payment Integration\n-contact form\n\nThe next stuff i doing for this project is to write a package for connecting a printer to the website and printing out orders. ","title":"REACT PROJECT","image":{"localFile":{"publicURL":"/static/416feee01b19e7e7c0cb26c2ef6ef6b6/Screen_Shot_2023_05_03_at_2_56_17_PM_3e85c62915.png"}}}},"pageContext":{"id":"Projects_3","title":"REACT PROJECT","__params":{"title":"react-project"}}},
-    "staticQueryHashes": []}

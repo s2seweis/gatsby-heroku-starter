@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-projects-strapi-projects-title-js",
-    "path": "/projects/my-first-static-blog/",
-    "result": {"data":{"strapiProjects":{"description":"\nA blog, short for weblog, is a frequently updated web page used for personal commentary or business content. Blogs are often interactive and include sections at the bottom of individual blog posts where readers can leave comments.\n\nThis project is still in development. At the moment I had no time for making progress in it.  So far it is a static website that i will later connect with Google Adsense. ","title":"My first static blog","image":{"localFile":{"publicURL":"/static/14c6bf7c20b256c86bf991fcfe8a5b33/projects_1_2d70a94b89.jpg"}}}},"pageContext":{"id":"Projects_1","title":"My first static blog","__params":{"title":"my-first-static-blog"}}},
-    "staticQueryHashes": []}

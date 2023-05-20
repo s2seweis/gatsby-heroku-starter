@@ -1,64 +1,33 @@
-// import React from 'react';
+import React from 'react';
 import {graphql} from 'gatsby';
-import Title from '../components/Title';
 import Seo from '../components/Seo';
 
-import {FaReact, FaNodeJs} from 'react-icons/fa';
-import {BsFiletypeHtml, BsFiletypeCss} from 'react-icons/bs';
-
-import {logo} from '../assets/images/hero.svg';
-
-import {
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiGatsby,
-  SiNodedotjs,
-  SiAngular,
-  SiJquery,
-} from 'react-icons/si';
-
 // ###
-
 // import Seo from '../components/Seo';
 
-import Game from '../components-game/Game';
-
-import hero from '../assets/images/hero.svg';
-import projects from '../assets/images/projects-1.jpg';
-
-import logo5 from '../assets/images/logo5.svg';
-
-import projects1 from '../assets/images/projects-4.jpg';
-import projects2 from '../assets/images/projects-3.jpg';
-
 // ###
-import {Button} from 'react-bootstrap';
 // import '../assets/css/main.css';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Accordion from 'react-bootstrap/Accordion';
+
 import ListGroup from 'react-bootstrap/ListGroup';
 
 import '../components/custom.css';
 
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 
-import Card from 'react-bootstrap/Card';
 
 import flyer from '../assets/images/flyer.jpg';
 
 import logo6 from '../assets/images/logo6.png';
 
 import simple from '../assets/images/simple.gif';
-import xd5 from '../assets/images/xd-draft.jpg';
 
-import Carousel from 'react-bootstrap/Carousel';
+import xd5 from '../assets/images/xd-draft.jpg';
 
 import Preloader from '../components/loader';
 
 import ScrollToTop from "react-scroll-to-top";
-
 
 // ###
 
@@ -102,23 +71,22 @@ export const query = graphql`
 `;
 
 const Adobe = ({data}) => {
-  const [index, setIndex] = useState (0);
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex (selectedIndex);
-  };
+  // const [index, setIndex] = useState (0);
+
+  // const handleSelect = (selectedIndex, e) => {
+  //   setIndex (selectedIndex);
+  // };
 
   console.log (data);
   const {
     strapiAdobe: {
       title1,
-      text1,
       image1,
       image2,
       image3,
       image4,
-      image5,
-      image6,
+      
     },
   } = data;
   return (
@@ -421,72 +389,3 @@ const Adobe = ({data}) => {
 
 export default Adobe;
 
-// ###
-
-// import React from "react"
-// import { graphql } from "gatsby"
-// import Title from "../components/Title"
-// import Seo from "../components/Seo"
-
-// const About = ({ data }) => {
-//   console.log(data);
-//   const {
-//     strapiAbout: { title, image, info, stack },
-//   } = data
-//   return (
-//     <>
-//       <Seo title="About" />
-//       <section className="about-page">
-
-//         <div
-
-//         // style={{display:"flex"}}
-
-//         className="section-center1 about-center">
-//           <img src={image.localFile.publicURL} alt={title} className="about-img-svg" />
-
-//           <article className="about-text">
-//             <Title title={title} />
-//             <p>{info}</p>
-
-//             <div className="about-stack">
-
-//             <div className="abou-stack-center"
-
-//             style={{display:"table", margin:"auto"}}
-
-//             >
-
-//               {stack.map(item => {
-//                 return <span key={item.id}>{item.title}</span>
-//               })}
-//             </div>
-
-//               </div>
-
-//           </article>
-//         </div>
-//       </section>
-//     </>
-//   )
-// }
-
-// export const query = graphql`
-//   {
-//     strapiAbout {
-//       title
-//       info
-//       stack {
-//         id
-//         title
-//       }
-//       image {
-//         localFile {
-//           publicURL
-//         }
-//       }
-//     }
-//   }
-// `
-
-// export default About

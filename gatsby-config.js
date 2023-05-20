@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+// import png from './src/assets/images/screenshot.png'
+
 module.exports = {
   /* Your site config here */
 
@@ -13,7 +15,7 @@ module.exports = {
     titleTemplate: `%s | WebDev Portfolio `,
     url: `https://gatsby-strapi-portfolio-project.netlify.app`,
     githubUsername:"s2seweis",
-    image: `/scrrenshot.png`,
+    image: `./src/assets/images/screenshot.png`,
   },
 
   plugins: [

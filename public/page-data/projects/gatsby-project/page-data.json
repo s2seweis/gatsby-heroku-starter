@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-projects-strapi-projects-title-js",
-    "path": "/projects/gatsby-project/",
-    "result": {"data":{"strapiProjects":{"description":"For my portfolio I used Gatsby and Strapi. \nIt was an interesting experience using a CMS for building a website. \n","title":"GATSBY PROJECT","image":{"localFile":{"publicURL":"/static/b5f21ad81633b527a35c5876df692677/Screen_Shot_2023_05_03_at_2_53_49_PM_88da2e8652.png"}}}},"pageContext":{"id":"Projects_4","title":"GATSBY PROJECT","__params":{"title":"gatsby-project"}}},
-    "staticQueryHashes": []}

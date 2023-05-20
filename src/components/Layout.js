@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
-import Footer from "./Footer"
+// import Footer from "./Footer"
 import Line from "./Line"
 
 import "../assets/css/main.css"

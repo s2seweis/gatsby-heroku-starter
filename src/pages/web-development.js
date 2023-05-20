@@ -1,62 +1,18 @@
-// import React from 'react';
+import React from 'react';
 import {graphql} from 'gatsby';
 // import Title from '../components/Title';
 import Seo from '../components/Seo';
 
-import Card from 'react-bootstrap/Card';
 
-// import test3 from '../assets/images/test3.jpg';
 
-// import {FaReact, FaNodeJs} from 'react-icons/fa';
-// import {BsFiletypeHtml, BsFiletypeCss} from 'react-icons/bs';
 
-// import {logo} from '../assets/images/hero.svg';
-
-// import {
-//   SiJavascript,
-//   SiTypescript,
-//   SiReact,
-//   SiGatsby,
-//   SiNodedotjs,
-//   SiAngular,
-//   SiJquery,
-// } from 'react-icons/si';
-
-// ###
-
-// import Seo from '../components/Seo';
-
-// import Game from '../components-game/Game';
-
-// import hero from '../assets/images/hero.svg';
-// import projects from '../assets/images/projects-1.jpg';
-
-// import logo5 from '../assets/images/logo5.svg';
-
-// import projects1 from '../assets/images/projects-4.jpg';
-// import projects2 from '../assets/images/projects-3.jpg';
-
-// ###
-// import '../assets/css/main.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import {Button} from 'react-bootstrap';
-import Accordion from 'react-bootstrap/Accordion';
-// import ListGroup from 'react-bootstrap/ListGroup';
-// import Card from 'react-bootstrap/Card';
-// import Carousel from 'react-bootstrap/Carousel';
-
-// import Breadcrumb from 'react-bootstrap/Breadcrumb';
-// ###
-
-// import '../components/custom.css';
 
 import 'semantic-ui-css/semantic.min.css';
 
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 
 import {StaticImage} from 'gatsby-plugin-image';
 
-import {Breadcrumb} from 'semantic-ui-react';
 
 export const query = graphql`
   {
@@ -88,11 +44,11 @@ export const query = graphql`
 `;
 
 const Webdevelopment = ({data}) => {
-  const [index, setIndex] = useState (0);
+  // const [index, setIndex] = useState (0);
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex (selectedIndex);
-  };
+  // const handleSelect = (selectedIndex, e) => {
+  //   setIndex (selectedIndex);
+  // };
 
   console.log (data);
   const {
@@ -107,7 +63,7 @@ const Webdevelopment = ({data}) => {
       stack1,
       stack2,
       stack3,
-      image,
+      // image,
     },
   } = data;
   return (
@@ -121,42 +77,7 @@ const Webdevelopment = ({data}) => {
 
         <div style={{margin: 'auto', marginBottom: '15px'}} className="top-web">
 
-          {/* <header className="hero">
           
-
-            <section className="section-center hero-center">
-
-              <article className="hero-info1">
-                <div>
-
-                  <h1 style={{textAlign: 'center'}}>Hello my friend</h1>
-                  <h3
-                    className="h3-webdesign"
-                    style={{
-                      textAlign: 'center',
-                      width: '350px',
-                      textTransform: 'inherit',
-                    }}
-                  >
-                    Just a short list of tools that I currently use. At the moment I am busy with webdesign.
-                  </h3>
-                  <div style={{margin: 'auto'}} className="underline" />
-
-                </div>
-              </article>
-
-              <StaticImage
-                src="../assets/images/group.png"
-                alt="portfolio"
-                className="hero-img"
-                placeholder="blurred"
-              />
-
-              
-
-            </section>
-
-          </header> */}
 
           <header className="hero">
 
@@ -201,15 +122,7 @@ const Webdevelopment = ({data}) => {
                   className="h2-h4"
                 >
 
-                  {/* <h2
-                style={{margin:"auto", width:"350px"}}
-                >Building digital solutions that bring your ideas to life.</h2> */}
-
-                  {/* <h4
-                style={{marginTop:"50px"}}
-                >
-                 Building digital solutions that bring your ideas to life.
-                </h4> */}
+                
 
                 </div>
 
@@ -549,25 +462,7 @@ const Webdevelopment = ({data}) => {
                 className="col-6"
               >
 
-                {/* ### */}
-
-                {/* <Breadcrumb style={{display: 'flex', justifyContent: 'center'}}>
-                  <Breadcrumb.Item active style={{marginRight: '10px'}}>
-                    Webdevelopment/
-                  </Breadcrumb.Item>
-                  <Breadcrumb.Item href="/web-design">
-                    Webdesign{' '}
-                  </Breadcrumb.Item>
-                  <Breadcrumb.Item href="/404">Adobe</Breadcrumb.Item>
-                </Breadcrumb> */}
-
-                {/* <Breadcrumb>
-                  <Breadcrumb.Section link>Home</Breadcrumb.Section>
-                  <Breadcrumb.Divider />
-                  <Breadcrumb.Section link>Store</Breadcrumb.Section>
-                  <Breadcrumb.Divider />
-                  <Breadcrumb.Section active>T-Shirt</Breadcrumb.Section>
-                </Breadcrumb> */}
+        
 
                 <div 
                 style={{display:"flex", justifyContent:"center"}}
@@ -609,7 +504,7 @@ const Webdevelopment = ({data}) => {
                         style={{
                           padding: '0px',
                           background: 'white',
-                          padding: '10px',
+                          // padding: '10px',
                         }}
                       >
 
