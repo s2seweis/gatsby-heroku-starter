@@ -422,6 +422,11 @@
   }
 }
 
+
+/* ---
+### Dropdown
+--- */
+
 .dropup,
 .dropend,
 .dropdown,
@@ -764,13 +769,9 @@
   z-index: 1;
 }
 
-
-
-
-
-
-
-
+/* ---
+### Accordion
+--- */
 
 .accordion {
   --bs-accordion-color: #212529;
@@ -912,6 +913,10 @@
 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
   border-radius: 0;
 }
+
+/* ---
+### List
+--- */
 
 .list-group {
   --bs-list-group-color: #212529;
@@ -1264,6 +1269,9 @@
   border-color: #141619;
 }
 
+/* ---
+### Carousel
+--- */
 
 .carousel {
   position: relative;
@@ -1461,7 +1469,9 @@
   color: #000;
 }
 
-
+/* ---
+### Card 
+--- */
 
 .card {
   --bs-card-spacer-y: 1rem;
