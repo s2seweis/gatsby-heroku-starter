@@ -1,4 +1,4 @@
-# Gatsby-Strapi Portfolio Starter
+# Gatsby-Strapi Portfolio Starter - Portfolio
 
 ## Setup Notes
 
@@ -32,11 +32,12 @@
     },
 ```
 
-Building the Project:
-npm run build
 
-Run the Project:
-npm start or gatsbydevelop
+## Running Notes
+
+ - Building the Project: npm run build
+
+ - Run the Project: npm start or gatsbydevelop
 
 
 
