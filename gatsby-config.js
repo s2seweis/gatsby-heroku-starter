@@ -16,6 +16,7 @@ module.exports = {
     url: `https://gatsby-strapi-portfolio-project.netlify.app`,
     githubUsername:"s2seweis",
     image: `./src/assets/images/screenshot.png`,
+    keywords: `html, css, javascript`,
   },
 
   plugins: [
