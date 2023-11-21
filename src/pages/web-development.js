@@ -4,6 +4,7 @@ import Seo from '../components/Seo';
 import 'semantic-ui-css/semantic.min.css';
 import { StaticImage } from 'gatsby-plugin-image';
 import Bench from '../components/Bench/Bench';  
+import ParticlesNew from '../components/Particles/Particles';
 
 export const query = graphql`
   {
@@ -105,6 +106,7 @@ const Webdevelopment = ({ data }) => {
                   placeholder="blurred"
                 /> */}
               </div>
+          <ParticlesNew/>
             </div>
           </header>
           <div className="Test2">
