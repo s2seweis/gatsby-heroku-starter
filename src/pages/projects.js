@@ -2,8 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
 import Seo from "../components/Seo"
-
 import ScrollToTop from "react-scroll-to-top";
+import '../assets/css/projects.css';
 
 const ProjectsPage = ({
   data: {

@@ -34,13 +34,6 @@ const data = [
     text: "contact",
     url: "/contact/",
   },
-
-  // {
-  //   id: 6,
-  //   text: "webdevelopment",
-  //   url: "/webdevelopment/",
-  // },
-
 ]
 
 export default data

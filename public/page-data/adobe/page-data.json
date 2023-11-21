@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-adobe-js",
-    "path": "/adobe/",
-    "result": {"data":{"strapiAdobe":{"title1":"Adobe Effects","text1":"Just an adobe effect test. ","image1":{"localFile":{"publicURL":"/static/2781fb84629ecce5990377dc76ad2f7a/Content_Aware_Fill_B_Filip_Bunkens_ba0d3c4e72.jpg"}},"image2":{"localFile":{"publicURL":"/static/f3e273ee0aebd4f3f9fffa2040a31096/Content_Aware_Fill_A_Filip_Bunkens_1c44e30996.jpg"}},"image3":{"localFile":{"publicURL":"/static/1086cd6e1c3be5037779e03e84352712/women_febbcebc65.jpg"}},"image4":{"localFile":{"publicURL":"/static/b425c242b448f5c1b93d6713bc5b6c32/women_after_8b4c505b1b.jpg"}},"image5":{"localFile":{"publicURL":"/static/03634395ed06b7a2af1d114ff54fbbc3/men_before_3ec6fb85ad.jpg"}},"image6":{"localFile":{"publicURL":"/static/360d38933f68ed122e0caf9e32d9ed82/men_aa96c0604f.jpg"}}}},"pageContext":{}},
-    "staticQueryHashes": []}

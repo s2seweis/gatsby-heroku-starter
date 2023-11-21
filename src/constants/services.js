@@ -9,17 +9,12 @@ const services = [
     icon: <FaCode className="service-icon" />,
     title: 'web development',
     text1: `I build modern websites in HTML, CSS, JAVASCRIPT `,
-
-    // text2: ` read more`,
-    // text2:               <p >test</p>
     text2: (
       <Link to="/web-development" className="btn1">
         read more
       </Link>
     ),
   },
-
-
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
@@ -31,8 +26,6 @@ const services = [
       </Link>
     ),
   },
-
-
   {
     id: 3,
     icon: <FaAndroid className="service-icon" />,
@@ -44,8 +37,6 @@ const services = [
       </Link>
     ),
   },
-
-
 ];
 
 export default services;

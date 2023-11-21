@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import socialLinks from '../constants/social_links';
-// import heroImg from "../assets/images/hero.svg"
 import {StaticImage} from 'gatsby-plugin-image';
+import '../assets/css/hero.css';
 
 const Hero = () => {
   return (
@@ -37,19 +37,8 @@ const Hero = () => {
                 );
               })}
             </div>
-
-            {/* <a
-              href="/files/CV.pdf"
-              alt="alt text"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download FIle
-            </a> */}
-
           </div>
         </article>
-
         <StaticImage
         style={{width:"65%", margin:"auto"}}
           src="../assets/images/hero.svg"
@@ -57,8 +46,6 @@ const Hero = () => {
           className="hero-img"
           placeholder="blurred"
         />
-
-        {/* <img src={heroImg} alt="portfolio" className="hero-img-svg" /> */}
       </section>
     </header>
   );

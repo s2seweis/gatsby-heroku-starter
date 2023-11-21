@@ -1,6 +1,9 @@
 import React from "react"
 import Seo from "../components/Seo"
+import '../assets/css/contact.css';
+
 const contact = () => {
+
   return (
     <>
       <Seo title="Contact" />
@@ -17,10 +20,7 @@ const contact = () => {
               />
               <input type="hidden" name="_captcha" value="false"></input>
               <input type="hidden" name="_next" value="https://precious-conkies-b8586b.netlify.app/thankyou"></input>
-
               <input type="hidden" name="_subject" value="Message From My Portfolio!!!"></input>
-
-
               <input
                 type="email"
                 name="email"

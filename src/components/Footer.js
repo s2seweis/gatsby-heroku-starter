@@ -1,5 +1,6 @@
 import React from "react"
 import socialLinks from "../constants/social_links"
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -13,10 +14,6 @@ const Footer = () => {
             )
           })}
         </div>
-        {/* <h4>
-          copyright&copy;{new Date().getFullYear()}
-          <span>WebDev</span> all rights reserved
-        </h4> */}
       </div>
     </footer>
   )

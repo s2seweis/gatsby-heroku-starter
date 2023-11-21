@@ -1,0 +1,46 @@
+/*
+===============
+Footer
+===============
+*/
+
+.footer {
+    height: 9rem;
+    background: white;
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+  
+  .footer1 {
+    height: 9rem;
+    border-top: 1px solid;
+    background: lightblue;
+    text-align: center;
+    place-items: center;
+    margin-top: 25px;
+    filter: drop-shadow(1px 0px 6px black) !important;  }
+  
+  .footer h4 {
+    margin-top: 0.5rem;
+    color: black;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  
+  .footer h4 span {
+    color: var(--clr-primary-5);
+  }
+  
+  .footer-links {
+    margin: 1rem auto 1rem auto;
+  }
+  
+  .footer .social-link {
+    color: var(--clr-white);
+  }
+  
+  .footer .social-link:hover {
+    color: var(--clr-primary-5);
+  }
+  

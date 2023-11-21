@@ -3,6 +3,7 @@ import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
+import '../assets/css/jobs.css';
 
 const query = graphql`
 {
@@ -19,7 +20,6 @@ const query = graphql`
   }
 }
 `
-
 const Jobs = () => {
   const data = useStaticQuery(query)
   const {
@@ -29,14 +29,10 @@ const Jobs = () => {
   const { company, position, date, desc } = jobs[value]
   return (
     <section className="section jobs"
-    
     style={{background: 'lightblue'}}
-    
-    
     >
       <Title title="experience" />
       <div className="jobs-center">
-        {/* btn container */}
         <div className="btn-container1">
           {jobs.map((item, index) => {
             return (
@@ -50,7 +46,6 @@ const Jobs = () => {
             )
           })}
         </div>
-        {/* job info */}
         <article className="job-info">
           <h3>{position}</h3>
           <h4>{company}</h4>
@@ -66,9 +61,7 @@ const Jobs = () => {
         </article>
       </div>
       <Link 
-      
       style={{display:"flex", justifyContent:"center", background:"white"}}
-      
       to="/about" className="btn center-btn">
         About Me
       </Link>

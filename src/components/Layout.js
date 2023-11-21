@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
-// import Footer from "./Footer"
+import '../assets/css/layout.css';
 import Line from "./Line"
 
 import "../assets/css/main.css"
@@ -18,7 +18,6 @@ const Layout = ({ children }) => {
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       {children}
       <Line />
-      {/* <Footer /> */}
     </>
   )
 }
